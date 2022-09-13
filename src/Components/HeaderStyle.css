@@ -16,8 +16,8 @@ header {
 nav {
   width: 100%;
   height: 15vh;
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
+  background: rgba(0, 0, 0, 0.3);
+  color: rgba(249, 197, 28, 1);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -27,6 +27,7 @@ nav {
 nav .logo {
   width: 25%;
   text-align: center;
+  cursor: pointer;
 }
 
 nav .menu {
@@ -36,15 +37,19 @@ nav .menu {
 }
 
 nav .menu a {
-  width: 25%;
+  width: 20%;
   text-decoration: none;
-  color: white;
+  color: black;
   font-weight: bold;
   font-size: 1.2vw;
 }
 
 nav .menu a:first-child {
-  color: #00b894;
+  color: rgba(29, 46, 136, 1);
+}
+
+nav .menu a:last-child {
+  color: rgba(249, 197, 28, 1);
 }
 
 main {
@@ -54,7 +59,7 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: white;
+  color: rgba(29, 46, 136, 1);
 }
 
 section h3 {
@@ -62,14 +67,16 @@ section h3 {
   font-weight: 500;
   letter-spacing: 3px;
   text-shadow: 1px 1px 2px black;
+  color: rgba(29, 29, 29, 1);
 }
 
 section h1 {
   margin: 30px 0 20px 0;
   font-size: 2vw;
   font-weight: 700;
-  text-shadow: 2px 1px 5px black;
+  /* text-shadow: 2px 1px 5px black; */
   text-transform: uppercase;
+  color: rgba(249, 197, 28, 1);
 }
 
 section p {
@@ -77,6 +84,7 @@ section p {
   word-spacing: 0.2vw;
   margin-bottom: 25px;
   text-shadow: 1px 1px 1px black;
+  color: black;
 }
 
 section a {
@@ -92,30 +100,39 @@ section a {
 }
 
 section .btnone {
-  background: #fff;
+  background: rgba(249, 197, 28, 1);
   color: #000;
-  margin: 1vw;
+  margin: 1vw 1vw;
 }
 
 .btnone:hover {
-  background: #00b894;
+  background: rgba(29, 46, 136, 1);
   color: white;
 }
 
 section .btntwo {
-  background: #00b894;
+  background: rgba(29, 46, 136, 1);
   color: white;
+  margin: 1vw 1vw;
+}
+
+.btns {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1vw 1vw;
 }
 
 .btntwo:hover {
-  background: #fff;
-  color: #000;
+  background: rgba(249, 197, 28, 1);
+  color: black;
 }
 
 .change_content:after {
   content: "";
   animation: changetext 10s infinite linear;
-  color: #00b894;
+  color: rgba(29, 46, 136, 1);
 }
 
 @keyframes changetext {
